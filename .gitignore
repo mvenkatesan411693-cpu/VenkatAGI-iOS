@@ -4,3 +4,7 @@ DerivedData/
 *.xcuserstate
 xcuserdata/
 *.xcworkspace/xcuserdata/
+
+# Local source backups
+*.swift.backup
+*.plist.backup

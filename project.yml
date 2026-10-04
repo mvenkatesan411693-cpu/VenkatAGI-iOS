@@ -27,10 +27,4 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Venkat AGI
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
-    dependencies:
-      - package: Firebase
 
-packages:
-  Firebase:
-    url: https://github.com/firebase/firebase-ios-sdk.git
-    from: "12.0.0"

@@ -27,6 +27,24 @@ jobs:
             -scheme VenkatAGI \
             -sdk iphoneos \
             -configuration Debug \
+            -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             build
+
+      - name: Verify Build
+        run: |
+          ls -la build/Build/Products/Debug-iphoneos/
+          test -d build/Build/Products/Debug-iphoneos/VenkatAGI.app
+
+      - name: Package iOS App
+        run: |
+          cd build/Build/Products/Debug-iphoneos
+          zip -r "$GITHUB_WORKSPACE/VenkatAGI-iOS-Debug.zip" VenkatAGI.app
+
+      - name: Upload iOS Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: VenkatAGI-iOS-Debug
+          path: VenkatAGI-iOS-Debug.zip
+          retention-days: 14

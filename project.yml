@@ -1,0 +1,36 @@
+name: VenkatAGI
+
+options:
+  bundleIdPrefix: com.venkatesan
+  deploymentTarget:
+    iOS: "17.0"
+
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.venkatesan.venkatagi
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  VenkatAGI:
+    type: application
+    platform: iOS
+    sources:
+      - path: VenkatAGIApp.swift
+      - path: ContentView.swift
+    resources:
+      - path: GoogleService-Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.venkatesan.venkatagi
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Venkat AGI
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+    dependencies:
+      - package: Firebase
+
+packages:
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    from: "12.0.0"

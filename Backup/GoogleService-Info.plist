@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>311181360974-ajjdeahageu581e3mt07ttm53aqp4aft.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.311181360974-ajjdeahageu581e3mt07ttm53aqp4aft</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>311181360974-58died3bntu3kph99dogmet76gm5ffcr.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAVVtBtNHPeV_AnxndLSpZxfhfxr_ad6Sg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>311181360974</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.venkatesan.venkatagi</string>
+	<key>PROJECT_ID</key>
+	<string>venkat-agi</string>
+	<key>STORAGE_BUCKET</key>
+	<string>venkat-agi.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:311181360974:ios:76683cc3419033f309681f</string>
+</dict>
+</plist>
